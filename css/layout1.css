@@ -1,0 +1,133 @@
+@charset "utf-8";
+/*
+	Author: James Murphy
+	Date: 09/03/2022
+	File: layout1.css
+
+	Basic layout styles for Old School Runescape Fan Site
+*/
+
+/* Header Styles */
+header {
+	text-align: center;
+	padding-top: 1%;
+	margin: 0 20%;
+}
+header > nav.horizontalNavigation ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	padding-right: 2%; /*Correct nav list into the center */
+}
+header > nav.horizontalNavigation ul li {
+	flex-basis: 0px;
+	flex-grow: 1;
+
+}
+
+/*Body Styles*/
+body > section#main {
+	margin: 1% 10% 1%;
+	padding: 0 1% 0;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+body > section#main > h1 {
+	text-align: center;
+}
+
+
+/* Set up a flexbox layout for articles with the "content" class*/
+article.content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+}
+article.content > div {
+	padding: 0 2% 0;
+}
+article.content > img {
+	padding-top: 1%;
+	padding-right: 1%;
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+	max-width: 260px;
+}
+article.content > iframe {
+	padding-top: 1%;
+	padding-right: 1%;
+	width: 100%;
+	max-width: 35%;
+	min-width: 400px;
+}
+
+/* Survey page form styles */
+form#survey {
+	margin-bottom: 3%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+form#survey fieldset#visitorInfo {
+	margin-left: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 400px;
+}
+form#survey fieldset#expInfo {
+	margin-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 400px;
+}
+form#survey div.formRow {
+	margin-bottom: 2%;
+}
+form#survey fieldset.likelyOptGroup {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+div#buttons {
+	margin-bottom: 1%;
+	text-align: center;
+}
+div#buttons input {
+	margin: 0 1% 0;
+	height: 40px;
+}
+
+/* Calculator form styles */
+form#calculator {
+	margin: 2% 20% 2% 15%;
+}
+form#calculator fieldset {
+	margin-bottom: 2%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+form#calculator div.formRow input {
+	width: 50px;
+}
+h2#cblevel, h3#nextLevel, h4#reqs {
+	text-align: center;
+}
+
+/* Footer styles */
+footer {
+	display: block;
+	text-align: center;
+
+	margin: 0 30%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<head>
+
+	<meta charset="UTF-8" />
+	<title>Survey - OSRS Fansite</title>
+
+	<link href="css/layout1.css" rel="stylesheet" />
+	<link href="css/styles1.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+
+		<h1 id="siteName">Old School RuneScape Fan Site</h1>
+
+		<nav class="horizontalNavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="mmorpg.html">What is an MMORPG?</a></li>
+				<li><a href="history.html">History of RuneScape</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="combat.html">Combat</a></li>
+				<li><a href="accounts.html">Account Types</a></li>
+				<li><a href="end.html">End Game Content</a></li>
+				<li><a href="survey.html">Survey</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<section id="main">
+		<h2>Survey</h2>
+
+				<form id="survey">
+					<fieldset id="visitorInfo">
+						<legend>Demographic Information</legend>
+
+						<div class="formRow">
+							<label for="age">Age</label>
+							<input name="visitorAge" id="age" type="number" placeholder="Age" min="1" max="118" />
+						</div>
+
+						<div class="formRow">
+							<label for="gender">Gender</label>
+							<input name="visitorGender" id="gender" type="text" placeholder="Gender" />
+						</div>
+
+						<div class="formRow">
+            <label>Do you play video games regularly?</label>
+            <fieldset class="optGroup">
+              <label for="gYes">Yes</label>
+              <input name="isGamer" id="gYes" value="yes" type="radio" />
+              <label for="gNo">No</label>
+              <input name="isGamer" id="gNo" value="no" type="radio" />
+            </fieldset>
+          </div>
+					</fieldset>
+
+					<fieldset id="expInfo">
+						<legend>Survey Questions</legend>
+
+						<div class="formRow">
+							<label for="playedBefore">Have you played an MMO before?</label>
+							<fieldset class="optGroup">
+	              <label for="pYes">Yes</label>
+	              <input name="playedBefore" id="pYes" value="yes" type="radio" />
+	              <label for="pNo">No</label>
+	              <input name="playedBefore" id="pNo" value="no" type="radio" />
+	            </fieldset>
+						</div>
+
+						<div class="formRow" id="priorMMO">
+							<label for="whichMMO">Which MMOs have you played?</label>
+							<textarea name="mmoList" id="whichMMO"></textarea>
+						</div>
+
+						<div class="formRow">
+							<label for="likely">How likely are you to try OSRS after viewing this site? (1=Least Likely, 5=Most Likely)</label>
+							<fieldset class="likelyOptGroup">
+	              <label for="l1">1</label>
+	              <input name="likely" id="l1" value="1" type="radio" />
+	              <label for="l2">2</label>
+	              <input name="likely" id="l2" value="2" type="radio" />
+								<label for="l3">3</label>
+	              <input name="likely" id="l3" value="3" type="radio" />
+								<label for="l4">4</label>
+	              <input name="likely" id="l4" value="4" type="radio" />
+								<label for="l5">5</label>
+	              <input name="likely" id="l5" value="5" type="radio" />
+	            </fieldset>
+						</div>
+
+					</fieldset>
+				</form>
+
+				<!-- Keep the buttons out of the flexbox , just include form attribute to keep them associated-->
+
+				<div id="buttons">
+					<input type="submit" form="survey" value="Submit My Survey" />
+					<input type="reset" form="survey" value="Cancel" />
+				</div>
+
+	</section>
+
+	<footer>
+		jmurph39@asu.edu 2022
+	</footer>
+</body>

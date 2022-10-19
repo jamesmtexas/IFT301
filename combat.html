@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<head>
+
+	<meta charset="UTF-8" />
+	<title>Combat - OSRS Fansite</title>
+
+	<link href="css/layout1.css" rel="stylesheet" />
+	<link href="css/styles1.css" rel="stylesheet" />
+
+	<script src="js/combat.js" defer></script>
+</head>
+
+<body>
+	<header>
+
+		<h1 id="siteName">Old School RuneScape Fan Site</h1>
+
+		<nav class="horizontalNavigation">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="mmorpg.html">What is an MMORPG?</a></li>
+				<li><a href="history.html">History of RuneScape</a></li>
+				<li><a href="skills.html">Skills</a></li>
+				<li><a href="combat.html">Combat</a></li>
+				<li><a href="accounts.html">Account Types</a></li>
+				<li><a href="end.html">End Game Content</a></li>
+				<li><a href="survey.html">Survey</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<section id="main">
+
+		<h2>Combat</h2>
+
+		<article class="content">
+			<div>
+				<h3>Combat Skills</h3>
+				<p>Combat in RuneScape takes 3 forms: melee, ranged, and magic. Melee accuracy is determined by attack, with the maximum hit amount determined by strength. Ranged accuracy and max hit are
+				both determined soley by the ranged skill, and magic max hit depends on which spell is being used.</p>
+				<p>The player's hitpoints range from 10 at minimum to 99 at maximum. The prayer skill allows the use of different beneficial status prayers, such as increased damage or protection. Finally,
+				defence affects the accuracy rolls of NPCs or players against the player.</p>
+			</div>
+		</article>
+
+		<article class="content">
+			<div>
+				<h3>Combat Level</h3>
+				<p>The combat level is determined based on whether the player's melee, magic, or ranged skills are higher. Combat level is highly relevant in PVP, as the player can only attack
+				other players within a few combat levels of themselves.</p>
+			</div>
+		</article>
+
+		<form id="calculator">
+			<fieldset id="skillLevels">
+				<legend>Combat Level Calculator</legend>
+
+				<div class="formRow">
+					<label for="hitpoints">Hitpoints</label>
+					<input name="hp" id="hitpoints" type="number" value="10" min="10" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="attack">Attack</label>
+					<input name="atk" id="attack" type="number" value="1" min="1" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="strength">Strength</label>
+					<input name="str" id="strength" type="number" value="1" min="1" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="defence">Defence</label>
+					<input name="def" id="defence" type="number" value="1" min="1" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="ranged">Ranged</label>
+					<input name="range" id="ranged" type="number" value="1" min="1" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="magic">Magic</label>
+					<input name="mage" id="magic" type="number" value="1" min="1" max="99" />
+				</div>
+				<div class="formRow">
+					<label for="prayer">Prayer</label>
+					<input name="pray" id="prayer" type="number" value="1" min="1" max="99" />
+				</div>
+
+			</fieldset>
+
+			<div id="buttons">
+			<input type="button" onclick="runCalculator()" value="Calculate Combat Level" />
+			<input type="reset" value="Cancel" />
+		</div>
+		</form>
+
+		<h2 id="cblevel">Combat level: 3</h2>
+		<h3 id="nextLevel"></h3>
+		<h4 id="reqs"></h4>
+
+	</section>
+
+	<footer>
+		jmurph39@asu.edu 2022
+	</footer>
+</body>

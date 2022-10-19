@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*
+	Author: James Murphy
+	Date: 09/03/2022
+	File: styles1.css
+
+	Basic typographical styles for Old School Runescape Fan Site
+*/
+
+/* Define color scheme as variables */
+:root {
+	--color1:#50555E;
+	--color2:#6C674A;
+	--color3:#718030;
+	--color4:#536233;
+	--color5:#808CA1;
+}
+
+/*Backgrounds*/
+body {
+	background-color: var(--color2);
+}
+header, footer, section {
+	background-color: var(--color4);
+}
+header > h1#siteName , header > nav.horizontalNavigation li, article.content, form fieldset {
+	background-color: var(--color3);
+}
+
+/*Header*/
+header {
+	border: var(--color1) solid 4px;
+	border-radius: 10px;
+}
+header > h1#siteName {
+	display: block;
+	margin: 0 20% 2%;
+	border: var(--color1) solid 2px;
+	border-radius: 10px;
+}
+
+/*Nav List*/
+header > nav.horizontalNavigation ul {
+	list-style-type: none;
+}
+header > nav.horizontalNavigation li {
+	border: var(--color1) solid 2px;
+	border-radius: 10px;
+}
+header > nav.horizontalNavigation a {
+	text-decoration: none;
+	color: black;
+}
+header > nav.horizontalNavigation a:hover, nav.horizontalNavigation a:active {
+	color: white;
+}
+
+/*Body*/
+body > section#main {
+	border: var(--color1) solid 5px;
+	border-radius: 10px;
+}
+article.content {
+	border: var(--color1) solid 2px;
+	border-radius: 10px;
+}
+form legend {
+	color: white;
+}
+h2#cblevel , h3#nextLevel, h4#reqs{
+	color: white;
+
+}
+
+/*Footer*/
+footer {
+	border: var(--color1) solid 4px;
+	border-radius: 10px;
+}
